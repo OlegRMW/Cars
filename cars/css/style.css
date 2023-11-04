@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+*, *::before ,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.btn {
+    min-width: 200px;
+    height: 50px;
+    padding: 0 15px;
+    margin-top: 30px;
+    display: inline-flex;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFF;
+    background: #DB2512;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s ease;
+}
+
+.btn:hover {
+    background-color: #e35858;
+}
+
+/*Header start*/
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.header__block {
+    width: 20%;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__link {
+    margin-right: 35px;
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav__link::after {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    background-color:#fff;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+
+}
+
+.nav__link.active::after {
+    opacity: 1;
+}
+
+.nav__link:hover::after {
+    opacity: 1;
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
+
+.header__lng {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header__lng__link {
+    color: #B7B7B7;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+
+.header__lng__link:last-child {
+    margin-right: 0;
+}
+
+.header__lng__link.active {
+    color:#FFF;
+}
+
+/*Header end*/
+
+
+/*Intro start*/
+.intro {
+    background: url("../img/intro_bg.jpg");
+    background-size: cover;
+}
+
+.intro__content {
+    display: flex;
+    height: 750px;
+    align-items: center;
+}
+
+.intro__block {
+
+}
+
+.intro__title {
+    font-weight: 700;
+    color: #FFF;
+    font-size: 48px;
+    max-width: 790px;
+    line-height: 150%;
+}
+/*Intro end*/
+
+
